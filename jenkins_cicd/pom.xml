@@ -39,6 +39,24 @@
         </cloudHubDeployment> 
     </configuration>
 			</plugin>
+			 <plugin>
+        <groupId>org.mojohaus</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-resource</id>
+            <phase>generate-resource</phase>
+            <goals>
+              <goal>add-resource</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>src/it/java</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
 		
 		</plugins>
 	

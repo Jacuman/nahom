@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="jenkins_cicdFlow" doc:id="5245c3f8-8c6a-47dd-b394-16153b6d4007" >
 		<http:listener doc:name="Listener" doc:id="ffdf035a-7265-4abc-99b8-6762a06dbef7" config-ref="HTTP_Listener_config" path="/ci"/>
-		<set-payload value="#['Successfully Updated Nahom Mezenge ']" doc:name="Set Payload" doc:id="edd40318-352f-45ee-af26-195d78ceacf7" />
+		<set-payload value="#['Successfully Updated Nahom Mezenge 123 ']" doc:name="Set Payload" doc:id="edd40318-352f-45ee-af26-195d78ceacf7" />
 	</flow>
 </mule>
